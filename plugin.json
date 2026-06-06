@@ -1,6 +1,6 @@
 {
   "name": "homelab",
-  "description": "Homelab ops assistant. Auto-loads INFRA.md from project root at session start. Provides /hl-status, /hl-debug, /hl-fix, /hl-logs commands.",
+  "description": "Homelab ops assistant. Auto-loads INFRA.md from project root at session start. Skills: /hl-status, /hl-debug, /hl-fix, /hl-logs, /hl-init, /hl-rollback, /hl-info, /hl-docs, /hl-updates, /homelab-new-app.",
   "author": {
     "name": "Federico Serini",
     "url": "https://github.com/FedericoSerini"
