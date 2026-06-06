@@ -5,7 +5,8 @@ Homelab ops assistant for a Talos/FluxCD Kubernetes cluster. Loads cluster conte
 ## Install
 
 ```bash
-claude plugin add https://github.com/FedericoSerini/homelab-plugin
+claude plugin marketplace add FedericoSerini/homelab-plugin
+claude plugin install homelab@homelab-plugin
 ```
 
 ## Setup

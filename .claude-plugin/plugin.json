@@ -1,0 +1,23 @@
+{
+  "name": "homelab",
+  "version": "1.0.0",
+  "description": "Homelab ops assistant. Auto-loads INFRA.md from project root at session start. Skills: /hl-status, /hl-debug, /hl-fix, /hl-logs, /hl-init, /hl-rollback, /hl-info, /hl-docs, /hl-updates, /homelab-new-app.",
+  "author": {
+    "name": "Federico Serini",
+    "url": "https://github.com/FedericoSerini"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/src/hooks/hl-activate.sh\"",
+            "timeout": 5,
+            "statusMessage": "Loading homelab context..."
+          }
+        ]
+      }
+    ]
+  }
+}

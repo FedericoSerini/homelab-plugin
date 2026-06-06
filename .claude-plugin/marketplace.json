@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "homelab-plugin",
+  "description": "Homelab ops assistant for a Talos/FluxCD Kubernetes cluster.",
+  "owner": {
+    "name": "Federico Serini",
+    "url": "https://github.com/FedericoSerini"
+  },
+  "plugins": [
+    {
+      "name": "homelab",
+      "description": "Homelab ops assistant. Auto-loads INFRA.md at session start. Skills: /hl-status, /hl-debug, /hl-fix, /hl-logs, /hl-init, /hl-rollback, /hl-info, /hl-docs, /hl-updates, /homelab-new-app.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
