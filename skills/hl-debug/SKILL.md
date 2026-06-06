@@ -19,6 +19,12 @@ Run this diagnostic sequence:
    `kubectl logs <pod> -n <ns> --tail=30`
    If CrashLoopBackOff: also run `kubectl logs <pod> -n <ns> --previous --tail=30`
 
+3.5. Pod events (catches failures invisible in logs — ImagePullBackOff, OOMKilled, probe failures, scheduling):
+   ```bash
+   kubectl describe pod <pod> -n <ns> | grep -A 10 "^Events:"
+   ```
+   Format each event as: `<Type>  <Reason>  <Message>`
+
 4. If CNPG database for this app exists: check cluster status:
    `kubectl get cluster -n <ns>`
 
